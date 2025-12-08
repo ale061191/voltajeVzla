@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Button } from "@/components/ui/Button";
 import { motion } from 'framer-motion';
 import { Users, Clock, Zap, TrendingUp, Building, Smartphone, Coffee, ShoppingBag } from 'lucide-react';
@@ -28,9 +29,11 @@ export const BusinessSections = () => {
                         <p className="text-xl text-gray-400 mb-8 max-w-lg">
                             Ofrece a tus clientes la comodidad de cargar sus dispositivos y mejora su experiencia en tu negocio.
                         </p>
-                        <Button size="lg" className="shadow-[0_0_30px_rgba(0,230,118,0.3)]">
-                            Solicitar Información
-                        </Button>
+                        <Link href="/registro">
+                            <Button size="lg" className="shadow-[0_0_30px_rgba(0,230,118,0.3)]">
+                                Solicitar Información
+                            </Button>
+                        </Link>
                     </motion.div>
 
                     <motion.div

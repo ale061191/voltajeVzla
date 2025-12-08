@@ -49,9 +49,11 @@ export const Navbar = () => {
                             {link.name}
                         </Link>
                     ))}
-                    <Button variant="primary" size="sm">
-                        Cotizar Ahora
-                    </Button>
+                    <Link href="/registro">
+                        <Button variant="primary" size="sm">
+                            Cotizar Ahora
+                        </Button>
+                    </Link>
                 </div>
 
                 {/* Mobile Menu Button */}
@@ -83,9 +85,11 @@ export const Navbar = () => {
                                     {link.name}
                                 </Link>
                             ))}
-                            <Button variant="primary" className="w-full">
-                                Cotizar Ahora
-                            </Button>
+                            <Link href="/registro" onClick={() => setIsMobileMenuOpen(false)}>
+                                <Button variant="primary" className="w-full">
+                                    Cotizar Ahora
+                                </Button>
+                            </Link>
                         </div>
                     </motion.div>
                 )}
