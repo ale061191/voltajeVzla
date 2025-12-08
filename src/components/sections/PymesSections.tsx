@@ -1,6 +1,7 @@
 'use client';
 
 import React from 'react';
+import Link from 'next/link';
 import { Button } from "@/components/ui/Button";
 import { motion } from 'framer-motion';
 import { Clock, Star, Zap, CheckCircle } from 'lucide-react';
@@ -25,9 +26,11 @@ export const PymesSections = () => {
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-10">
                         Beneficios exclusivos para PYMES que se registren anticipadamente. Moderniza tu espacio y atrae más clientes con tecnología de vanguardia.
                     </p>
-                    <Button size="lg" className="shadow-[0_0_20px_rgba(0,230,118,0.4)]">
-                        Registra tu Negocio
-                    </Button>
+                    <Link href="/registro">
+                        <Button size="lg" className="shadow-[0_0_20px_rgba(0,230,118,0.4)]">
+                            Registra tu Negocio
+                        </Button>
+                    </Link>
 
                     {/* Hero Product Render Placeholder */}
                     <div className="mt-16 relative max-w-4xl mx-auto h-[400px] flex items-center justify-center">
@@ -97,7 +100,9 @@ export const PymesSections = () => {
                                 ))}
                             </ul>
 
-                            <Button className="w-full" size="lg">Reclamar Oferta Ahora</Button>
+                            <Link href="/registro" className="w-full">
+                                <Button className="w-full" size="lg">Reclamar Oferta Ahora</Button>
+                            </Link>
                         </div>
                     </div>
                 </div>
