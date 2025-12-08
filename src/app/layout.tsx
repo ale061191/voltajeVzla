@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Outfit } from "next/font/google"; // Using Outfit for a modern tech look
 import "./globals.css";
+import { WhatsAppFAB } from "@/components/ui/WhatsAppFAB";
 
 const outfit = Outfit({
   variable: "--font-outfit",
@@ -27,6 +28,7 @@ export default function RootLayout({
         className={`${outfit.variable} antialiased bg-background text-foreground bg-[url('/grid-bg.svg')]`} // Added placeholder for grid bg if we add one later
       >
         {children}
+        <WhatsAppFAB />
       </body>
     </html>
   );

@@ -10,7 +10,7 @@ export const Footer = () => {
         <footer className="border-t border-white/10 bg-black/50 backdrop-blur-xl relative z-10 pt-20 pb-10">
             <div className="container mx-auto px-6">
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
                     {/* Brand */}
                     <div className="space-y-6">
                         <Link href="/" className="flex items-center gap-2">
@@ -50,6 +50,25 @@ export const Footer = () => {
                             {['Características', 'Precios', 'Casos de Uso', 'Seguridad'].map((link) => (
                                 <li key={link}><a href="#" className="hover:text-[#00E676] transition-colors">{link}</a></li>
                             ))}
+                        </ul>
+                    </div>
+
+                    {/* Contact Info */}
+                    <div>
+                        <h4 className="font-bold mb-6 text-white">Contacto</h4>
+                        <ul className="space-y-4 text-sm text-gray-400">
+                            <li className="flex items-center gap-3">
+                                <span className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-[#00E676]">📞</span>
+                                <a href="tel:+584126851090" className="hover:text-[#00E676] transition-colors">+58 412 685 1090</a>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <span className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-[#00E676]">✉️</span>
+                                <a href="mailto:info@voltajevzla.com" className="hover:text-[#00E676] transition-colors">info@voltajevzla.com</a>
+                            </li>
+                            <li className="flex items-center gap-3">
+                                <span className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center text-[#00E676]">📍</span>
+                                <span>Caracas, Venezuela</span>
+                            </li>
                         </ul>
                     </div>
 
