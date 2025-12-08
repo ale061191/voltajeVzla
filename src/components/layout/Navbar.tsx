@@ -35,12 +35,7 @@ export const Navbar = () => {
             <div className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2 group">
-                    <div className="bg-[#00E676] p-1.5 rounded-lg group-hover:shadow-[0_0_15px_rgba(0,230,118,0.5)] transition-all">
-                        <Zap className="w-6 h-6 text-black fill-current" />
-                    </div>
-                    <span className="text-xl font-bold tracking-tight text-white group-hover:text-[#00E676] transition-colors">
-                        VOLTIFI
-                    </span>
+                    <img src="/images/logo_voltaje.png" alt="Voltaje" className="h-10 w-auto object-contain" />
                 </Link>
 
                 {/* Desktop Links */}

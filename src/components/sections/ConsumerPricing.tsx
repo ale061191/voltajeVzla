@@ -20,7 +20,7 @@ const plans = [
         highlight: false
     },
     {
-        name: "Voltifi Plus",
+        name: "Voltaje Plus",
         price: "$19.99",
         period: "/ mes",
         description: "Carga ilimitada para usuarios frecuentes.",

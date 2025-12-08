@@ -10,8 +10,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Voltifi | Estaciones de Carga Inteligentes",
-  description: "Mantente cargado y conectado con las estaciones de voltaje inteligente de Voltifi.",
+  title: "Voltaje | Estaciones de Carga Inteligentes",
+  description: "Mantente cargado y conectado con las estaciones de voltaje inteligente de Voltaje.",
   icons: {
     icon: '/favicon.ico',
   }

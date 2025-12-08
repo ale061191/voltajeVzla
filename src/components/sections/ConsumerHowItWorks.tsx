@@ -15,7 +15,7 @@ const steps = [
         id: 2,
         icon: Scan,
         title: "Escanea el QR",
-        description: "Encuentra la estación Voltifi más cercana y escanea el código QR ubicado en el frente de la estación."
+        description: "Encuentra la estación Voltaje más cercana y escanea el código QR ubicado en el frente de la estación."
     },
     {
         id: 3,

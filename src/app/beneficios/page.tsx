@@ -63,7 +63,7 @@ export default function BeneficiosPage() {
                             transition={{ delay: 0.1 }}
                             className="text-xl text-gray-400"
                         >
-                            Descubre cómo Voltifi transforma la experiencia de mantenerte conectado en la ciudad.
+                            Descubre cómo Voltaje transforma la experiencia de mantenerte conectado en la ciudad.
                         </motion.p>
                     </div>
 

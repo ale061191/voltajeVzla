@@ -14,12 +14,7 @@ export const Footer = () => {
                     {/* Brand */}
                     <div className="space-y-6">
                         <Link href="/" className="flex items-center gap-2">
-                            <div className="bg-[#00E676] p-1.5 rounded-lg">
-                                <Zap className="w-5 h-5 text-black fill-current" />
-                            </div>
-                            <span className="text-xl font-bold tracking-tight text-white">
-                                VOLTIFI
-                            </span>
+                            <img src="/images/logo_voltaje.png" alt="Voltaje" className="h-10 w-auto object-contain" />
                         </Link>
                         <p className="text-gray-400 text-sm leading-relaxed">
                             Revolucionando la forma en que el mundo se conecta y carga.
@@ -89,7 +84,7 @@ export const Footer = () => {
                 </div>
 
                 <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-                    <p>&copy; {new Date().getFullYear()} Voltifi Inc. Todos los derechos reservados.</p>
+                    <p>&copy; {new Date().getFullYear()} Voltaje. Todos los derechos reservados.</p>
                     <div className="flex gap-6">
                         <a href="#" className="hover:text-white transition-colors">Privacidad</a>
                         <a href="#" className="hover:text-white transition-colors">Términos</a>

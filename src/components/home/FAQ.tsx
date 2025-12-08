@@ -23,7 +23,7 @@ const faqs = [
     },
     {
         question: "¿Puedo devolver el power bank en cualquier estación?",
-        answer: "Sí, puedes devolver el power bank en cualquier estación Voltifi, sin importar dónde lo hayas alquilado. Solo colócalo en cualquier ranura libre y el alquiler se finalizará automáticamente."
+        answer: "Sí, puedes devolver el power bank en cualquier estación Voltaje, sin importar dónde lo hayas alquilado. Solo colócalo en cualquier ranura libre y el alquiler se finalizará automáticamente."
     },
     {
         question: "¿Qué capacidad tienen los power banks?",

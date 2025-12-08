@@ -43,7 +43,7 @@ export const MapSection = () => {
                     className="order-1 lg:order-2"
                 >
                     <div className="inline-block px-3 py-1 mb-4 rounded-full bg-[#00E676]/10 border border-[#00E676]/20 text-[#00E676] text-sm font-bold">
-                        Red Voltifi
+                        Red Voltaje
                     </div>
                     <h2 className="text-3xl md:text-5xl font-bold mb-6">
                         Encuentra una Estación <span className="text-[#00E676]">Cerca de Ti</span>
