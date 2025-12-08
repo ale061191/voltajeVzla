@@ -72,7 +72,7 @@ export const Navbar = () => {
                         initial={{ opacity: 0, height: 0 }}
                         animate={{ opacity: 1, height: 'auto' }}
                         exit={{ opacity: 0, height: 0 }}
-                        className="md:hidden glass border-t border-white/10"
+                        className="md:hidden bg-black/90 backdrop-blur-xl border-t border-white/10"
                     >
                         <div className="flex flex-col p-6 gap-4">
                             {navLinks.map((link) => (
