@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es" className="scroll-smooth">
+    <html lang="es" className="scroll-smooth" suppressHydrationWarning>
       <body
         className={`${outfit.variable} antialiased bg-background text-foreground bg-[url('/grid-bg.svg')]`} // Added placeholder for grid bg if we add one later
       >

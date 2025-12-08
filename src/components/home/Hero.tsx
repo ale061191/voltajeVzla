@@ -76,24 +76,22 @@ export const Hero = () => {
                     transition={{ duration: 0.8, delay: 0.2 }}
                     className="relative"
                 >
-                    <div className="relative z-10 glass rounded-3xl p-4 md:p-8 aspect-square flex items-center justify-center border-t border-white/10 shadow-2xl shadow-[#00E676]/10">
-                        {/* Placeholder for Product Image */}
-                        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl" />
+                    <div className="relative z-10 glass rounded-3xl p-4 md:p-8 aspect-square flex items-center justify-center border-t border-white/10 shadow-2xl shadow-[#00E676]/10 overflow-hidden">
+                        {/* Background Gradient */}
+                        <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent z-0" />
 
-                        {/* Mockup Element - Replace with actual image later */}
-                        <div className="relative w-full h-3/4 bg-black/40 rounded-2xl border border-white/5 flex items-center justify-center overflow-hidden">
-                            <div className="text-center p-8">
-                                <p className="text-gray-500 text-sm mb-2">Imagen del Producto</p>
-                                <div className="w-32 h-16 bg-[#00E676]/20 mx-auto rounded-lg blur-xl" />
-                                <p className="text-7xl mt-[-40px]">⚡️</p>
-                            </div>
-                        </div>
+                        {/* Actual Product Image */}
+                        <img
+                            src="/images/hero_render.png"
+                            alt="Estación de Carga Voltaje"
+                            className="relative z-10 w-full h-full object-cover rounded-2xl shadow-2xl transition-transform hover:scale-105 duration-700"
+                        />
 
                         {/* Floating Elements */}
                         <motion.div
                             animate={{ y: [0, -10, 0] }}
                             transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
-                            className="absolute top-10 right-10 glass px-4 py-2 rounded-xl flex items-center gap-3"
+                            className="absolute top-10 right-10 glass px-4 py-2 rounded-xl flex items-center gap-3 z-20"
                         >
                             <div className="w-2 h-2 rounded-full bg-green-500" />
                             <span className="text-sm font-medium">Estación Activa</span>
@@ -102,7 +100,7 @@ export const Hero = () => {
                         <motion.div
                             animate={{ y: [0, 10, 0] }}
                             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
-                            className="absolute bottom-10 left-10 glass px-4 py-2 rounded-xl flex items-center gap-3"
+                            className="absolute bottom-10 left-10 glass px-4 py-2 rounded-xl flex items-center gap-3 z-20"
                         >
                             <Wifi className="w-4 h-4 text-[#00E676]" />
                             <span className="text-sm font-medium">150 Mbps</span>

@@ -34,13 +34,15 @@ export const PymesSections = () => {
 
                     {/* Hero Product Render Placeholder */}
                     <div className="mt-16 relative max-w-4xl mx-auto h-[400px] flex items-center justify-center">
-                        <div className="w-full h-full glass rounded-3xl border border-white/5 bg-gradient-to-b from-white/5 to-transparent flex items-center justify-center shadow-2xl">
-                            {/* 3D Model Placeholder */}
-                            <div className="text-center">
-                                <div className="w-40 h-40 bg-[#1a1a1a] rounded-2xl mx-auto mb-4 border border-[#00E676]/30 shadow-[0_0_50px_rgba(0,230,118,0.2)] rotate-12 flex items-center justify-center">
-                                    <Zap className="w-16 h-16 text-[#00E676]" />
-                                </div>
-                                <p className="text-gray-500 font-mono text-sm">VOLTIFI STATION PRO</p>
+                        <div className="w-full h-full glass rounded-3xl border border-white/5 bg-gradient-to-b from-white/5 to-transparent overflow-hidden shadow-2xl relative">
+                            <img
+                                src="/images/business_lifestyle.png"
+                                alt="Voltaje en Negocios"
+                                className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-700"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent pointer-events-none" />
+                            <div className="absolute bottom-8 left-0 right-0 text-center">
+                                <p className="text-[#00E676] font-mono text-sm tracking-widest font-bold">VOLTAJE STATION PRO</p>
                             </div>
                         </div>
                     </div>
@@ -77,11 +79,14 @@ export const PymesSections = () => {
             <section className="py-20">
                 <div className="container mx-auto px-6 max-w-5xl">
                     <div className="glass rounded-3xl border border-[#00E676]/20 overflow-hidden flex flex-col md:flex-row shadow-[0_0_50px_rgba(0,230,118,0.05)]">
-                        <div className="w-full md:w-1/2 p-12 bg-gradient-to-br from-white/5 to-transparent flex items-center justify-center">
-                            {/* Product Image Placeholder */}
-                            <div className="w-full aspect-square bg-black/50 rounded-2xl border border-white/10 flex items-center justify-center">
-                                <div className="w-32 h-10 bg-white rounded-lg opacity-10"></div>
-                            </div>
+                        <div className="w-full md:w-1/2 p-0 bg-black/50 flex items-center justify-center relative group overflow-hidden">
+                            {/* Product Image */}
+                            <img
+                                src="/images/pyme_offer.png"
+                                alt="Crecimiento con Voltaje"
+                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-r from-transparent to-black/80 md:hidden" />
                         </div>
 
                         <div className="w-full md:w-1/2 p-12 flex flex-col justify-center">
@@ -113,9 +118,19 @@ export const PymesSections = () => {
                 <div className="container mx-auto px-6">
                     <h2 className="text-center text-2xl font-bold mb-12">Así se ven en acción</h2>
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
-                        {[1, 2, 3, 4].map((i) => (
-                            <div key={i} className="aspect-square bg-white/5 rounded-2xl border border-white/5 hover:border-[#00E676] transition-colors cursor-pointer overflow-hidden group">
-                                <div className="w-full h-full bg-gradient-to-b from-transparent to-black/50 group-hover:scale-105 transition-transform duration-500" />
+                        {[
+                            "/images/gallery_scan.png",
+                            "/images/cafe_voltifi.png",
+                            "/images/retail_voltifi.png",
+                            "/images/event_voltifi.png"
+                        ].map((src, i) => (
+                            <div key={i} className="aspect-square bg-white/5 rounded-2xl border border-white/5 hover:border-[#00E676] transition-colors cursor-pointer overflow-hidden group relative">
+                                <img
+                                    src={src}
+                                    alt={`Galería Voltaje ${i + 1}`}
+                                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                                />
+                                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/80 opacity-60 group-hover:opacity-40 transition-opacity" />
                             </div>
                         ))}
                     </div>
