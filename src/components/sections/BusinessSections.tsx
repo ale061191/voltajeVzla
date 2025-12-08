@@ -129,11 +129,11 @@ export const BusinessSections = () => {
                                 <div className="space-y-4 text-sm text-gray-400">
                                     <div className="flex items-center gap-3">
                                         <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">✉️</div>
-                                        info@voltifi.com
+                                        info@voltajevzla.com
                                     </div>
                                     <div className="flex items-center gap-3">
                                         <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center">📞</div>
-                                        +58 412 123 4567
+                                        +58 412 426 5960
                                     </div>
                                 </div>
                             </div>
