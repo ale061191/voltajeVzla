@@ -1,0 +1,33 @@
+import type { Metadata } from "next";
+import { Outfit } from "next/font/google"; // Using Outfit for a modern tech look
+import "./globals.css";
+
+const outfit = Outfit({
+  variable: "--font-outfit",
+  subsets: ["latin"],
+  display: 'swap',
+});
+
+export const metadata: Metadata = {
+  title: "Voltifi | Estaciones de Carga Inteligentes",
+  description: "Mantente cargado y conectado con las estaciones de voltaje inteligente de Voltifi.",
+  icons: {
+    icon: '/favicon.ico',
+  }
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="es" className="scroll-smooth">
+      <body
+        className={`${outfit.variable} antialiased bg-background text-foreground bg-[url('/grid-bg.svg')]`} // Added placeholder for grid bg if we add one later
+      >
+        {children}
+      </body>
+    </html>
+  );
+}
