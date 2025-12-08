@@ -98,12 +98,14 @@ export const ConsumerPricing = () => {
                                 ))}
                             </ul>
 
-                            <Button
-                                variant={plan.highlight ? 'primary' : 'outline'}
-                                className="w-full"
-                            >
-                                {plan.name === 'Empresas' ? 'Contactar Ventas' : 'Comenzar Ahora'}
-                            </Button>
+                            <Link href="/registro" className="w-full block">
+                                <Button
+                                    variant={plan.highlight ? 'primary' : 'outline'}
+                                    className="w-full"
+                                >
+                                    {plan.name === 'Empresas' ? 'Contactar Ventas' : 'Comenzar Ahora'}
+                                </Button>
+                            </Link>
                         </motion.div>
                     ))}
                 </div>
