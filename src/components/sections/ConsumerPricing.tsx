@@ -1,113 +1,131 @@
+
 'use client';
 
 import React from 'react';
 import Link from 'next/link';
 import { Button } from "@/components/ui/Button";
 import { motion } from 'framer-motion';
-import { Check } from 'lucide-react';
-
-const plans = [
-    {
-        name: "Pago por Uso",
-        price: "$1.00",
-        period: "/ hora",
-        description: "Perfecto para recargas rápidas ocasionales.",
-        features: [
-            "Acceso a Batería Carga Rápida",
-            "Cables integrados (Lightning/USB-C)",
-            "Sin cuotas mensuales",
-            "Devolución en cualquier estación"
-        ],
-        highlight: false
-    },
-    {
-        name: "Voltaje Plus",
-        price: "$19.99",
-        period: "/ mes",
-        description: "Carga ilimitada para usuarios frecuentes.",
-        features: [
-            "Uso ilimitado de baterías",
-            "Sin depósito de garantía",
-            "Reservar baterías con antelación",
-            "Soporte Premium 24/7",
-            "Acceso a salas VIP en partners"
-        ],
-        highlight: true
-    },
-    {
-        name: "Empresas",
-        price: "Custom",
-        period: "",
-        description: "Instala una estación en tu negocio.",
-        features: [
-            "Estación de 12 bahías",
-            "Panel de control de analíticas",
-            "Marca personalizada en pantalla",
-            "Mantenimiento incluido",
-            "Ingresos compartidos"
-        ],
-        highlight: false
-    }
-];
+import { Check, Info, Star, Users } from 'lucide-react';
 
 export const ConsumerPricing = () => {
     return (
-        <section className="py-20">
-            <div className="container mx-auto px-6">
-                <div className="text-center mb-20">
-                    <h2 className="text-4xl md:text-6xl font-bold mb-6">
-                        Planes Flexibles para <br />
-                        <span className="text-[#00E676] text-glow">Cada Necesidad</span>
+        <section className="py-20 relative overflow-hidden">
+            {/* Background Glow */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#00E676] opacity-[0.03] blur-[120px] rounded-full pointer-events-none" />
+
+            <div className="container mx-auto px-6 relative z-10">
+                <div className="text-center mb-16">
+                    <h2 className="text-4xl md:text-5xl font-bold mb-4">
+                        Tu Energía, <span className="text-[#00E676] text-glow">Tu Elección</span>
                     </h2>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Ya sea que necesites una carga rápida o quieras instalar una estación en tu local, tenemos una opción para ti.
+                        Sin contratos forzosos. Elige pagar solo por lo que usas o disfruta de libertad ilimitada.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                    {plans.map((plan, index) => (
-                        <motion.div
-                            key={index}
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
-                            className={`glass p-8 rounded-3xl relative flex flex-col ${plan.highlight ? 'border-[#00E676] shadow-[0_0_30px_rgba(0,230,118,0.1)]' : 'border-white/10'}`}
-                        >
-                            {plan.highlight && (
-                                <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-[#00E676] text-black px-4 py-1 rounded-full text-sm font-bold">
-                                    Más Popular
-                                </div>
-                            )}
+                {/* Main Split Card (Firevolt Style Adaptation) */}
+                <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-0 lg:gap-8 mb-12">
 
-                            <div className="mb-8">
-                                <h3 className="text-xl font-bold mb-2">{plan.name}</h3>
-                                <div className="flex items-baseline gap-1">
-                                    <span className="text-4xl font-bold text-white">{plan.price}</span>
-                                    <span className="text-gray-400 text-sm">{plan.period}</span>
+                    {/* Pay As You Go Section */}
+                    <div className="glass rounded-3xl p-8 md:p-12 border border-[#00E676]/30 relative overflow-hidden group">
+                        <div className="absolute top-0 right-0 w-64 h-64 bg-[#00E676] opacity-5 blur-[80px] rounded-full pointer-events-none" />
+
+                        <h3 className="text-3xl font-bold mb-6">Paga solo por el tiempo que necesites</h3>
+
+                        <div className="space-y-6">
+                            <div className="flex items-start gap-4">
+                                <div className="w-10 h-10 rounded-full bg-[#00E676]/10 flex items-center justify-center text-[#00E676] shrink-0 font-bold">1</div>
+                                <div>
+                                    <h4 className="font-bold text-lg text-white">Depósito Inicial</h4>
+                                    <p className="text-gray-400">Recarga <span className="text-[#00E676] font-bold">$10.00</span> en tu saldo wallet para comenzar a usar el servicio.</p>
                                 </div>
-                                <p className="text-gray-400 text-sm mt-3">{plan.description}</p>
                             </div>
 
-                            <ul className="space-y-4 mb-8 flex-1">
-                                {plan.features.map((feature, i) => (
-                                    <li key={i} className="flex items-start gap-3 text-sm text-gray-300">
-                                        <Check className="w-5 h-5 text-[#00E676] shrink-0" />
-                                        {feature}
-                                    </li>
-                                ))}
+                            <div className="flex items-start gap-4">
+                                <div className="w-10 h-10 rounded-full bg-[#00E676]/10 flex items-center justify-center text-[#00E676] shrink-0 font-bold">2</div>
+                                <div>
+                                    <h4 className="font-bold text-lg text-white">Descuento Automático</h4>
+                                    <p className="text-gray-400">El costo del alquiler se descuenta de tu saldo. ¡Lo que no uses queda a tu favor!</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-10 pt-8 border-t border-white/10">
+                            <h4 className="text-sm uppercase tracking-widest text-[#00E676] font-bold mb-4">Tarifa de Uso</h4>
+                            <div className="flex items-baseline gap-2 mb-2">
+                                <span className="text-5xl font-bold text-white">$1.00</span>
+                            </div>
+                            <p className="text-gray-300">Por cada <span className="font-bold text-white">30 minutos</span> de uso.</p>
+                            <p className="text-xs text-gray-500 mt-2">* Tarifa calculada en Bolívares a la tasa del día.</p>
+                        </div>
+
+                        <div className="mt-8">
+                            <Link href="/registro">
+                                <Button className="w-full">Recargar Saldo</Button>
+                            </Link>
+                        </div>
+                    </div>
+
+                    {/* VIP & Referral Column */}
+                    <div className="flex flex-col gap-6 h-full">
+
+                        {/* VIP Membership Card */}
+                        <div className="glass p-8 rounded-3xl border border-[#00E676] relative overflow-hidden flex-1 shadow-[0_0_40px_rgba(0,230,118,0.15)]">
+                            <div className="absolute top-4 right-4 bg-gradient-to-r from-[#00E676] to-emerald-500 text-black text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">
+                                Recomendado
+                            </div>
+
+                            <div className="mb-6">
+                                <h3 className="text-2xl font-bold mb-2 flex items-center gap-2">
+                                    <Star className="fill-[#00E676] text-[#00E676]" />
+                                    Membresía VIP
+                                </h3>
+                                <p className="text-gray-400">Olvídate de contar los minutos.</p>
+                            </div>
+
+                            <div className="flex items-baseline gap-1 mb-6">
+                                <span className="text-4xl font-bold text-white">$10</span>
+                                <span className="text-gray-400">/ mes</span>
+                            </div>
+
+                            <ul className="space-y-3 mb-8">
+                                <li className="flex items-center gap-3 text-sm text-gray-200">
+                                    <Check className="w-4 h-4 text-[#00E676]" /> Tiempor ilimitado en todas las estaciones
+                                </li>
+                                <li className="flex items-center gap-3 text-sm text-gray-200">
+                                    <Check className="w-4 h-4 text-[#00E676]" /> Sin depósitos ni retenciones
+                                </li>
+                                <li className="flex items-center gap-3 text-sm text-gray-200">
+                                    <Check className="w-4 h-4 text-[#00E676]" /> Acceso prioritario
+                                </li>
                             </ul>
 
-                            <Link href="/registro" className="w-full block">
-                                <Button
-                                    variant={plan.highlight ? 'primary' : 'outline'}
-                                    className="w-full"
-                                >
-                                    {plan.name === 'Empresas' ? 'Contactar Ventas' : 'Comenzar Ahora'}
+                            <Link href="/registro">
+                                <Button variant="primary" className="w-full shadow-lg shadow-[#00E676]/20">
+                                    Obtener VIP
                                 </Button>
                             </Link>
-                        </motion.div>
-                    ))}
+                        </div>
+
+                        {/* Referral Card */}
+                        <div className="glass p-8 rounded-3xl border border-white/10 relative overflow-hidden">
+                            <div className="flex items-start gap-4">
+                                <div className="p-3 rounded-full bg-purple-500/20 text-purple-400">
+                                    <Users className="w-6 h-6" />
+                                </div>
+                                <div>
+                                    <h4 className="font-bold text-lg text-white mb-1">Gana Cargas Gratis</h4>
+                                    <p className="text-sm text-gray-400 mb-4">
+                                        Invita a 5 amigos y recibe <span className="text-white font-bold">30 mins gratis</span> cuando alquilen.
+                                    </p>
+                                    <Link href="/registro" className="text-[#00E676] text-sm font-bold hover:underline flex items-center gap-1">
+                                        Invitar Amigos →
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
         </section>
