@@ -5,7 +5,7 @@
 import React, { useState } from 'react';
 import nextDynamic from 'next/dynamic';
 import { Navbar } from "@/components/layout/Navbar";
-import { Search, Filter, MapPin, Wifi, Battery, CheckCircle, XCircle } from 'lucide-react';
+import { Search, Filter, MapPin, Battery, CheckCircle, XCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const Map = nextDynamic<any>(() => import('@/components/home/Map'), {
@@ -60,7 +60,7 @@ export default function UbicaTuEstacionPage() {
                             <div className="space-y-3">
                                 {[
                                     { id: 'voltaje', label: 'Estación de Voltaje', icon: Battery, checked: true },
-                                    { id: 'wifi', label: 'Zona WiFi', icon: Wifi, checked: true },
+
                                     { id: 'tech', label: 'Soporte Técnico', icon: Filter, checked: false },
                                 ].map((filter) => (
                                     <label key={filter.id} className="flex items-center gap-3 cursor-pointer group">

@@ -23,8 +23,8 @@ export const BusinessSections = () => {
                             Soluciones para Negocios
                         </div>
                         <h2 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
-                            Atrae y Retiene <br />
-                            <span className="text-[#00E676] text-glow">Más Clientes</span>
+                            Instalación Gratuita. <br />
+                            <span className="text-[#00E676] text-glow">Mantenimiento Incluido.</span>
                         </h2>
                         <p className="text-xl text-gray-400 mb-8 max-w-lg">
                             Ofrece a tus clientes la comodidad de cargar sus dispositivos y mejora su experiencia en tu negocio.
@@ -44,18 +44,14 @@ export const BusinessSections = () => {
                         className="relative"
                     >
                         <div className="aspect-[4/3] rounded-3xl overflow-hidden glass border border-white/10 relative">
-                            {/* Placeholder for Station Image */}
-                            <div className="absolute inset-0 bg-gradient-to-br from-gray-800 to-black flex items-center justify-center">
-                                <div className="text-center">
-                                    <div className="w-48 h-64 bg-[#1a1a1a] rounded-xl border border-white/5 mx-auto mb-4 relative shadow-2xl">
-                                        <div className="absolute top-4 left-1/2 -translate-x-1/2 w-32 h-20 bg-black rounded-lg border border-white/10 flex items-center justify-center">
-                                            <span className="text-[#00E676] text-xs font-mono">VOLTIFI</span>
-                                        </div>
-                                        <div className="absolute bottom-0 w-full h-2 bg-[#00E676] shadow-[0_0_20px_#00E676]" />
-                                    </div>
-                                    <p className="text-gray-500 font-medium tracking-widest text-sm">STATION V2.0</p>
-                                </div>
-                            </div>
+                            <img
+                                src="/images/ai_generated/technicians_installing_v2.png"
+                                alt="Instalación de Estación Voltaje"
+                                className="absolute inset-0 w-full h-full object-cover hover:scale-105 transition-transform duration-700"
+                            />
+
+                            {/* Overlay Gradient for text readability if needed */}
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-60" />
                         </div>
                     </motion.div>
                 </div>
@@ -71,10 +67,10 @@ export const BusinessSections = () => {
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                         {[
-                            { icon: Users, title: "Aumenta el Tráfico", desc: "Atrae a nuevos clientes que buscan un lugar para cargar." },
-                            { icon: Clock, title: "Más Tiempo de Permanencia", desc: "Los clientes se quedan más tiempo, aumentando las ventas." },
-                            { icon: TrendingUp, title: "Mejora la Imagen", desc: "Posiciona tu negocio como moderno e innovador." },
-                            { icon: Zap, title: "Genera Ingresos", desc: "Ofrece un servicio premium y monetiza el uso." }
+                            { icon: Users, title: "Atrae Tráfico Peatonal", desc: "Los usuarios buscan activamente nuestras estaciones en la App para cargar." },
+                            { icon: Clock, title: "Aumenta la Retención", desc: "Un cliente con batería es un cliente que se queda más tiempo consumiendo." },
+                            { icon: TrendingUp, title: "Servicio Premium", desc: "Moderniza tu local ofreciendo una necesidad básica del siglo XXI." },
+                            { icon: Zap, title: "Sin Esfuerzo", desc: "Instalación 100% gratuita y mantenimiento gestionado por nosotros." }
                         ].map((item, i) => (
                             <div key={i} className="glass p-6 rounded-2xl border border-white/5 hover:border-[#00E676]/30 transition-colors group">
                                 <div className="w-10 h-10 rounded-lg bg-[#00E676]/10 flex items-center justify-center text-[#00E676] mb-4 group-hover:bg-[#00E676] group-hover:text-black transition-all">
@@ -94,10 +90,10 @@ export const BusinessSections = () => {
                     <h2 className="text-3xl font-bold mb-12">Ideal Para Tu Negocio</h2>
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                         {[
-                            { icon: Coffee, title: "Cafeterías", img: "/images/cafe_voltifi.png", isImage: true },
-                            { icon: ShoppingBag, title: "Retail", img: "/images/retail_voltifi.png", isImage: true },
-                            { icon: Building, title: "Hoteles", img: "/images/hotel_voltifi.png", isImage: true },
-                            { icon: Smartphone, title: "Eventos", img: "/images/event_voltifi.png", isImage: true }
+                            { icon: Coffee, title: "Cafeterías", img: "/images/ai_generated/cafe_voltifi.png", isImage: true },
+                            { icon: ShoppingBag, title: "Retail", img: "/images/ai_generated/retail_voltifi.png", isImage: true },
+                            { icon: Building, title: "Hoteles", img: "/images/ai_generated/hotel_voltifi.png", isImage: true },
+                            { icon: Smartphone, title: "Eventos", img: "/images/ai_generated/event_voltifi.png", isImage: true }
                         ].map((sector, i) => (
                             <div key={i} className="group relative aspect-[4/5] rounded-2xl overflow-hidden cursor-pointer border border-white/10 hover:border-[#00E676]/50 transition-colors">
                                 {sector.isImage ? (

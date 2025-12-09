@@ -2,32 +2,32 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Download, Scan, Zap, Wifi } from 'lucide-react';
+import { Download, Scan, Zap, MapPin } from 'lucide-react';
 
 const steps = [
     {
         id: 1,
-        icon: Download,
-        title: "Descarga la App",
-        description: "Disponible en iOS y Android. Crea tu cuenta en segundos y vincula tu método de pago preferido."
+        icon: Scan,
+        title: "Escanea o Paga",
+        description: "Usa la App de Voltaje o paga directamente con tu tarjeta contactless en la estación."
     },
     {
         id: 2,
-        icon: Scan,
-        title: "Escanea el QR",
-        description: "Encuentra la estación Voltaje más cercana y escanea el código QR ubicado en el frente de la estación."
+        icon: Zap,
+        title: "Recoge tu Power Bank",
+        description: "La estación expulsará automáticamente una batería cargada lista para usar."
     },
     {
         id: 3,
-        icon: Zap,
-        title: "Toma tu Powerbank",
-        description: "La estación liberará automáticamente una batería cargada. Tómala y conéctala a tu dispositivo."
+        icon: Download,
+        title: "Carga tu Dispositivo",
+        description: "Usa los cables integrados (Lightning, USB-C, Micro-USB). ¡No necesitas llevar cables!"
     },
     {
         id: 4,
-        icon: Wifi,
-        title: "Disfruta Conectado",
-        description: "Recibe acceso instantáneo a nuestra red WiFi y mantente cargado donde quiera que vayas."
+        icon: MapPin,
+        title: "Devuelve Donde Sea",
+        description: "Finaliza tu alquiler insertando la batería en cualquier estación de la red Voltaje en Caracas."
     }
 ];
 

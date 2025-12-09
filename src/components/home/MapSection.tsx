@@ -50,11 +50,11 @@ export const MapSection = () => {
                     </h2>
                     <p className="text-gray-400 text-lg mb-8">
                         Nuestra red de estaciones inteligentes está en constante expansión.
-                        Utiliza nuestro mapa interactivo para localizar el punto de carga y WiFi más cercano.
+                        Utiliza nuestro mapa interactivo para localizar el punto de carga más cercano.
                     </p>
 
                     <ul className="space-y-4">
-                        {['Disponible 24/7 en ubicaciones premium', 'Acceso gratuito a WiFi de alta velocidad', 'Compatible con todos los dispositivos'].map((item, i) => (
+                        {['Disponible 24/7 en ubicaciones premium', 'Sin necesidad de llevar cables', 'Compatible con todos los dispositivos'].map((item, i) => (
                             <li key={i} className="flex items-center gap-3 text-gray-300">
                                 <div className="w-2 h-2 rounded-full bg-[#00E676]" />
                                 {item}

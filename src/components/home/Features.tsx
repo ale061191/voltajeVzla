@@ -2,28 +2,28 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Zap, Wifi, Shield, PenTool } from 'lucide-react';
+import { Zap, CreditCard, Shield, PenTool } from 'lucide-react';
 
 const features = [
     {
         icon: Zap,
-        title: "Carga de Alta Velocidad",
-        description: "Equipado con cables Lightning, USB-C y Micro-USB. Compatible con iPhone, Android y más."
+        title: "Cables Incorporados",
+        description: "Todo en uno. Cada Power Bank incluye cables Lightning, USB-C y Micro-USB. Carga cualquier dispositivo."
     },
     {
-        icon: Wifi,
-        title: "Wi-Fi Seguro",
-        description: "Ofrece Wi-Fi seguro y de alta velocidad a sus invitados, protegido con los últimos protocolos."
+        icon: CreditCard,
+        title: "Pago Contactless",
+        description: "Sin apps obligatorias. Paga directamente en la estación con tu tarjeta de débito o crédito en segundos."
     },
     {
         icon: Shield,
-        title: "Diseño Elegante y Duradero",
-        description: "Fabricadas con materiales de primera calidad, diseñadas para durar y complementar cualquier interior."
+        title: "Red Interconectada",
+        description: "Alquila en un punto y devuelve en otro. Nuestra red cubre los puntos clave de Caracas."
     },
     {
         icon: PenTool,
-        title: "Instalación Fácil",
-        description: "Nuestras estaciones están diseñadas para un proceso de configuración sencillo y sin complicaciones."
+        title: "Carga Rápida y Segura",
+        description: "Baterías con tecnología de carga rápida y protección contra sobretensión para cuidar tu móvil."
     }
 ];
 

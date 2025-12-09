@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '../ui/Button';
 import Link from 'next/link';
-import { Zap, Wifi, Battery } from 'lucide-react';
+import { Zap, Battery, Shield } from 'lucide-react';
 
 export const Hero = () => {
     return (
@@ -32,24 +32,23 @@ export const Hero = () => {
                     </div>
 
                     <h1 className="text-5xl md:text-7xl font-bold leading-tight mb-6">
-                        Mantente <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00E676] to-[#00C853] text-glow">Cargado</span>,<br />
-                        Mantente <span className="text-white">Conectado.</span>
+                        Alquila una Power Bank y <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#00E676] to-[#00C853] text-glow">Mantente Conectado.</span>
                     </h1>
 
                     <p className="text-lg text-gray-400 mb-8 max-w-xl leading-relaxed">
-                        La red de alquiler de Power Banks más avanzada de Venezuela.
-                        Encuentra una estación, escanea y mantente conectado con WiFi de alta velocidad.
+                        Paga solo por el tiempo que necesites. Carga tu móvil al instante y devuelve la batería en cualquier estación Voltaje de Caracas.
                     </p>
 
                     <div className="flex flex-wrap gap-4">
                         <Link href="/registro">
                             <Button size="lg" className="group">
                                 <Zap className="w-5 h-5 mr-2 group-hover:rotate-12 transition-transform" />
-                                Obtener Cotización
+                                Descargar App
                             </Button>
                         </Link>
                         <Button variant="outline" size="lg">
-                            Ver Demostración
+                            Ver Mapa de Estaciones
                         </Button>
                     </div>
 
@@ -59,8 +58,8 @@ export const Hero = () => {
                             <span>Carga Rápida</span>
                         </div>
                         <div className="flex items-center gap-2">
-                            <Wifi className="w-5 h-5 text-[#00E676]" />
-                            <span>WiFi Seguro</span>
+                            <Shield className="w-5 h-5 text-[#00E676]" />
+                            <span>Carga Segura</span>
                         </div>
                         <div className="flex items-center gap-2">
                             <Zap className="w-5 h-5 text-[#00E676]" />
@@ -82,7 +81,7 @@ export const Hero = () => {
 
                         {/* Actual Product Image */}
                         <img
-                            src="/images/hero_render.png"
+                            src="/images/ai_generated/hero_render.png"
                             alt="Estación de Carga Voltaje"
                             className="relative z-10 w-full h-full object-cover rounded-2xl shadow-2xl transition-transform hover:scale-105 duration-700"
                         />
@@ -102,8 +101,8 @@ export const Hero = () => {
                             transition={{ repeat: Infinity, duration: 5, ease: "easeInOut", delay: 1 }}
                             className="absolute bottom-10 left-10 glass px-4 py-2 rounded-xl flex items-center gap-3 z-20"
                         >
-                            <Wifi className="w-4 h-4 text-[#00E676]" />
-                            <span className="text-sm font-medium">150 Mbps</span>
+                            <Battery className="w-4 h-4 text-[#00E676]" />
+                            <span className="text-sm font-medium">Carga Rápida</span>
                         </motion.div>
                     </div>
                 </motion.div>

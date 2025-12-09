@@ -4,7 +4,7 @@ import React from 'react';
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { motion } from 'framer-motion';
-import { Zap, Wifi, Shield, PenTool, Smartphone, Globe, Clock, BarChart } from 'lucide-react';
+import { Zap, Map, Shield, PenTool, Smartphone, Globe, Clock, BarChart } from 'lucide-react';
 
 const benefitsList = [
     {
@@ -13,9 +13,9 @@ const benefitsList = [
         description: "Tecnología PowerDelivery 3.0 que carga dispositivos hasta un 80% en 30 minutos. Compatible con iOS y Android."
     },
     {
-        icon: Wifi,
-        title: "WiFi 6 de Alta Velocidad",
-        description: "Conexión estable y segura aislada para cada usuario. Navega a velocidades de hasta 1Gbps mientras cargas."
+        icon: Map,
+        title: "Cobertura en toda la ciudad",
+        description: "Encuentra estaciones en los mejores locales, restaurantes y centros comerciales de Caracas."
     },
     {
         icon: Shield,

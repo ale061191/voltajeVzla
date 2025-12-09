@@ -36,7 +36,7 @@ export const PymesSections = () => {
                     <div className="mt-16 relative max-w-4xl mx-auto h-[400px] flex items-center justify-center">
                         <div className="w-full h-full glass rounded-3xl border border-white/5 bg-gradient-to-b from-white/5 to-transparent overflow-hidden shadow-2xl relative">
                             <img
-                                src="/images/business_lifestyle.png"
+                                src="/images/ai_generated/business_lifestyle.png"
                                 alt="Voltaje en Negocios"
                                 className="w-full h-full object-cover opacity-80 hover:opacity-100 transition-opacity duration-700"
                             />
@@ -82,7 +82,7 @@ export const PymesSections = () => {
                         <div className="w-full md:w-1/2 p-0 bg-black/50 flex items-center justify-center relative group overflow-hidden">
                             {/* Product Image */}
                             <img
-                                src="/images/pyme_offer.png"
+                                src="/images/ai_generated/pyme_offer.png"
                                 alt="Crecimiento con Voltaje"
                                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                             />
@@ -119,10 +119,10 @@ export const PymesSections = () => {
                     <h2 className="text-center text-2xl font-bold mb-12">Así se ven en acción</h2>
                     <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
                         {[
-                            "/images/gallery_scan.png",
-                            "/images/cafe_voltifi.png",
-                            "/images/retail_voltifi.png",
-                            "/images/event_voltifi.png"
+                            "/images/ai_generated/gallery_scan.png",
+                            "/images/ai_generated/cafe_voltifi.png",
+                            "/images/ai_generated/retail_voltifi.png",
+                            "/images/ai_generated/event_voltifi.png"
                         ].map((src, i) => (
                             <div key={i} className="aspect-square bg-white/5 rounded-2xl border border-white/5 hover:border-[#00E676] transition-colors cursor-pointer overflow-hidden group relative">
                                 <img

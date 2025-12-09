@@ -14,7 +14,7 @@ const plans = [
         description: "Perfecto para recargas rápidas ocasionales.",
         features: [
             "Acceso a Batería Carga Rápida",
-            "WiFi de 100Mbps incluido",
+            "Cables integrados (Lightning/USB-C)",
             "Sin cuotas mensuales",
             "Devolución en cualquier estación"
         ],
@@ -27,7 +27,7 @@ const plans = [
         description: "Carga ilimitada para usuarios frecuentes.",
         features: [
             "Uso ilimitado de baterías",
-            "WiFi de 1Gbps Prioritario",
+            "Sin depósito de garantía",
             "Reservar baterías con antelación",
             "Soporte Premium 24/7",
             "Acceso a salas VIP en partners"
